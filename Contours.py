@@ -2,12 +2,12 @@
 """
 Created on Mon Feb 10 21:52:56 2020
 
-@author: user61
+@author: Luu Nguyen
 """
 
 import numpy as np
 import cv2
-
+# slect path to image!
 img = cv2. imread('13.jpg')
 imgray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 ret, thresh = cv2.threshold(imgray, 130, 255, 0)
